@@ -1,0 +1,36 @@
+<div id="enforce_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Enforce Content</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div>
+                <label class="checkbox_label" for="enforce_enabled">
+                    <input type="checkbox" id="enforce_enabled" name="enforce_enabled">
+                    <small>Enabled</small>
+                </label>
+            </div>
+            <div>
+                <label for="enforce_expected">Expected text</label>
+                <textarea id="enforce_expected" placeholder="(text that should appear)" class="text_pole widthUnset flex1" rows="2" style="height: 28px;"></textarea>
+                    
+                <label for="enforce_continue_prefix">Continue prefix</label>
+                <textarea id="enforce_continue_prefix" placeholder="(text prefixed to continue)" class="text_pole widthUnset flex1" rows="2" style="height: 28px;"></textarea>
+            </div>
+            <div>
+                <b>Hint:</b>
+                <i>
+                    Set some text that should appear in the character message.
+                    If this text is not found in generated message, it will call continue starting with prefix text.
+                    Write prefix accordingly to obtain your expected text.
+                </i>
+                <br />
+                <b>Warning:</b>
+                <i>
+                    Does not work in group mode.
+                </i>
+            </div>
+        </div>
+    </div>
+</div>
